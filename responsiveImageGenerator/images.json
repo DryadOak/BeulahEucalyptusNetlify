@@ -1,0 +1,1003 @@
+[
+  {
+    "id": "DSC_0072",
+    "imagePath": "/images/gallery",
+    "widths": [
+      256,
+      455,
+      640,
+      768,
+      960,
+      1024,
+      1366,
+      1920
+    ],
+    "format": [
+      "jpg",
+      "webp"
+    ],
+    "aspectRatio": "0.67",
+    "alt": "DSC_0072",
+    "breakPoint": "(min-width: 999px) min(calc((100vw - 6.4rem) / 3), calc((111rem - 6.4) / 3)), (min-width: 847px) calc(50vw -4rem), calc(100vw -4rem)"
+  },
+  {
+    "id": "DSC_0196",
+    "imagePath": "/images/gallery",
+    "widths": [
+      256,
+      455,
+      640,
+      768,
+      960,
+      1024,
+      1366,
+      1920
+    ],
+    "format": [
+      "jpg",
+      "webp"
+    ],
+    "aspectRatio": "0.67",
+    "alt": "DSC_0196",
+    "breakPoint": "(min-width: 999px) min(calc((100vw - 6.4rem) / 3), calc((111rem - 6.4) / 3)), (min-width: 847px) calc(50vw -4rem), calc(100vw -4rem)"
+  },
+  {
+    "id": "DSC_9256",
+    "imagePath": "/images/gallery",
+    "widths": [
+      256,
+      455,
+      640,
+      768,
+      960,
+      1024,
+      1366,
+      1920
+    ],
+    "format": [
+      "jpg",
+      "webp"
+    ],
+    "aspectRatio": "0.67",
+    "alt": "DSC_9256",
+    "breakPoint": "(min-width: 999px) min(calc((100vw - 6.4rem) / 3), calc((111rem - 6.4) / 3)), (min-width: 847px) calc(50vw -4rem), calc(100vw -4rem)"
+  },
+  {
+    "id": "DSC_9275",
+    "imagePath": "/images/gallery",
+    "widths": [
+      256,
+      455,
+      640,
+      768,
+      960,
+      1024,
+      1366,
+      1920
+    ],
+    "format": [
+      "jpg",
+      "webp"
+    ],
+    "aspectRatio": "0.67",
+    "alt": "DSC_9275",
+    "breakPoint": "(min-width: 999px) min(calc((100vw - 6.4rem) / 3), calc((111rem - 6.4) / 3)), (min-width: 847px) calc(50vw -4rem), calc(100vw -4rem)"
+  },
+  {
+    "id": "DSC_9281",
+    "imagePath": "/images/gallery",
+    "widths": [
+      256,
+      455,
+      640,
+      768,
+      960,
+      1024,
+      1366,
+      1920
+    ],
+    "format": [
+      "jpg",
+      "webp"
+    ],
+    "aspectRatio": "0.67",
+    "alt": "DSC_9281",
+    "breakPoint": "(min-width: 999px) min(calc((100vw - 6.4rem) / 3), calc((111rem - 6.4) / 3)), (min-width: 847px) calc(50vw -4rem), calc(100vw -4rem)"
+  },
+  {
+    "id": "DSC_9297",
+    "imagePath": "/images/gallery",
+    "widths": [
+      256,
+      455,
+      640,
+      768,
+      960,
+      1024,
+      1366,
+      1920
+    ],
+    "format": [
+      "jpg",
+      "webp"
+    ],
+    "aspectRatio": "0.67",
+    "alt": "DSC_9297",
+    "breakPoint": "(min-width: 999px) min(calc((100vw - 6.4rem) / 3), calc((111rem - 6.4) / 3)), (min-width: 847px) calc(50vw -4rem), calc(100vw -4rem)"
+  },
+  {
+    "id": "DSC_9312",
+    "imagePath": "/images/gallery",
+    "widths": [
+      256,
+      455,
+      640,
+      768,
+      960,
+      1024,
+      1366,
+      1920
+    ],
+    "format": [
+      "jpg",
+      "webp"
+    ],
+    "aspectRatio": "0.67",
+    "alt": "DSC_9312",
+    "breakPoint": "(min-width: 999px) min(calc((100vw - 6.4rem) / 3), calc((111rem - 6.4) / 3)), (min-width: 847px) calc(50vw -4rem), calc(100vw -4rem)"
+  },
+  {
+    "id": "DSC_9318",
+    "imagePath": "/images/gallery",
+    "widths": [
+      256,
+      455,
+      640,
+      768,
+      960,
+      1024,
+      1366,
+      1920
+    ],
+    "format": [
+      "jpg",
+      "webp"
+    ],
+    "aspectRatio": "0.67",
+    "alt": "DSC_9318",
+    "breakPoint": "(min-width: 999px) min(calc((100vw - 6.4rem) / 3), calc((111rem - 6.4) / 3)), (min-width: 847px) calc(50vw -4rem), calc(100vw -4rem)"
+  },
+  {
+    "id": "DSC_9333",
+    "imagePath": "/images/gallery",
+    "widths": [
+      256,
+      455,
+      640,
+      768,
+      960,
+      1024,
+      1366,
+      1920
+    ],
+    "format": [
+      "jpg",
+      "webp"
+    ],
+    "aspectRatio": "0.67",
+    "alt": "DSC_9333",
+    "breakPoint": "(min-width: 999px) min(calc((100vw - 6.4rem) / 3), calc((111rem - 6.4) / 3)), (min-width: 847px) calc(50vw -4rem), calc(100vw -4rem)"
+  },
+  {
+    "id": "DSC_9340",
+    "imagePath": "/images/gallery",
+    "widths": [
+      256,
+      455,
+      640,
+      768,
+      960,
+      1024,
+      1366,
+      1920
+    ],
+    "format": [
+      "jpg",
+      "webp"
+    ],
+    "aspectRatio": "0.67",
+    "alt": "DSC_9340",
+    "breakPoint": "(min-width: 999px) min(calc((100vw - 6.4rem) / 3), calc((111rem - 6.4) / 3)), (min-width: 847px) calc(50vw -4rem), calc(100vw -4rem)"
+  },
+  {
+    "id": "DSC_9346",
+    "imagePath": "/images/gallery",
+    "widths": [
+      256,
+      455,
+      640,
+      768,
+      960,
+      1024,
+      1366,
+      1920
+    ],
+    "format": [
+      "jpg",
+      "webp"
+    ],
+    "aspectRatio": "0.67",
+    "alt": "DSC_9346",
+    "breakPoint": "(min-width: 999px) min(calc((100vw - 6.4rem) / 3), calc((111rem - 6.4) / 3)), (min-width: 847px) calc(50vw -4rem), calc(100vw -4rem)"
+  },
+  {
+    "id": "DSC_9450",
+    "imagePath": "/images/gallery",
+    "widths": [
+      256,
+      455,
+      640,
+      768,
+      960,
+      1024,
+      1366,
+      1920
+    ],
+    "format": [
+      "jpg",
+      "webp"
+    ],
+    "aspectRatio": "0.67",
+    "alt": "DSC_9450",
+    "breakPoint": "(min-width: 999px) min(calc((100vw - 6.4rem) / 3), calc((111rem - 6.4) / 3)), (min-width: 847px) calc(50vw -4rem), calc(100vw -4rem)"
+  },
+  {
+    "id": "DSC_9456",
+    "imagePath": "/images/gallery",
+    "widths": [
+      256,
+      455,
+      640,
+      768,
+      960,
+      1024,
+      1366,
+      1920
+    ],
+    "format": [
+      "jpg",
+      "webp"
+    ],
+    "aspectRatio": "0.67",
+    "alt": "DSC_9456",
+    "breakPoint": "(min-width: 999px) min(calc((100vw - 6.4rem) / 3), calc((111rem - 6.4) / 3)), (min-width: 847px) calc(50vw -4rem), calc(100vw -4rem)"
+  },
+  {
+    "id": "DSC_9961",
+    "imagePath": "/images/gallery",
+    "widths": [
+      256,
+      455,
+      640,
+      768,
+      960,
+      1024,
+      1366,
+      1920
+    ],
+    "format": [
+      "jpg",
+      "webp"
+    ],
+    "aspectRatio": "0.67",
+    "alt": "DSC_9961",
+    "breakPoint": "(min-width: 999px) min(calc((100vw - 6.4rem) / 3), calc((111rem - 6.4) / 3)), (min-width: 847px) calc(50vw -4rem), calc(100vw -4rem)"
+  },
+  {
+    "id": "DSC_0003",
+    "imagePath": "/images/gallery-span-two",
+    "widths": [
+      256,
+      455,
+      640,
+      768,
+      960,
+      1024,
+      1366,
+      1920,
+      2560
+    ],
+    "format": [
+      "jpg",
+      "webp"
+    ],
+    "aspectRatio": "1.50",
+    "alt": "DSC_0003",
+    "breakPoint": "(min-width: 1000px) calc(min(66vw, 766px) -4rem), calc(100vw -4rem)"
+  },
+  {
+    "id": "DSC_0179",
+    "imagePath": "/images/gallery-span-two",
+    "widths": [
+      256,
+      455,
+      640,
+      768,
+      960,
+      1024,
+      1366,
+      1920,
+      2560
+    ],
+    "format": [
+      "jpg",
+      "webp"
+    ],
+    "aspectRatio": "1.50",
+    "alt": "DSC_0179",
+    "breakPoint": "(min-width: 1000px) calc(min(66vw, 766px) -4rem), calc(100vw -4rem)"
+  },
+  {
+    "id": "DSC_9975",
+    "imagePath": "/images/gallery-span-two",
+    "widths": [
+      256,
+      455,
+      640,
+      768,
+      960,
+      1024,
+      1366,
+      1920,
+      2560
+    ],
+    "format": [
+      "jpg",
+      "webp"
+    ],
+    "aspectRatio": "0.67",
+    "alt": "DSC_9975",
+    "breakPoint": "(min-width: 1000px) calc(min(66vw, 766px) -4rem), calc(100vw -4rem)"
+  },
+  {
+    "id": "almond-eucalyptus-leaf-shape",
+    "imagePath": "/images/leaf-shape",
+    "widths": [
+      500,
+      750,
+      1100,
+      1500
+    ],
+    "format": [
+      "png",
+      "webp"
+    ],
+    "aspectRatio": "1.60",
+    "alt": "almond eucalyptus leaf shape",
+    "breakPoint": "(min-width: 848px) min(calc(38vw - 4rem), 40rem), calc(75vw -4rem)"
+  },
+  {
+    "id": "round-eucalyptus-leaf-shape",
+    "imagePath": "/images/leaf-shape",
+    "widths": [
+      250,
+      500,
+      750,
+      1100,
+      1500
+    ],
+    "format": [
+      "png",
+      "webp"
+    ],
+    "aspectRatio": "0.99",
+    "alt": "round eucalyptus leaf shape",
+    "breakPoint": "(min-width: 848px) min(calc(38vw - 4rem), 40rem), calc(75vw -4rem)"
+  },
+  {
+    "id": "willow-eucalyptus-leaf-shape",
+    "imagePath": "/images/leaf-shape",
+    "widths": [
+      250,
+      500,
+      750,
+      1100,
+      1500
+    ],
+    "format": [
+      "png",
+      "webp"
+    ],
+    "aspectRatio": "1.62",
+    "alt": "willow eucalyptus leaf shape",
+    "breakPoint": "(min-width: 848px) min(calc(38vw - 4rem), 40rem), calc(75vw -4rem)"
+  },
+  {
+    "id": "acaciiformis",
+    "imagePath": "/images/three-column",
+    "widths": [
+      256,
+      455,
+      640,
+      768,
+      960,
+      1024,
+      1366,
+      1920
+    ],
+    "format": [
+      "jpg",
+      "webp"
+    ],
+    "aspectRatio": "0.67",
+    "alt": "acaciiformis",
+    "breakPoint": "(min-width: 999px) min(calc((100vw - 6.4rem) / 3), calc((111rem - 6.4) / 3)), (min-width: 847px) calc(50vw -4rem), calc(100vw -4rem)"
+  },
+  {
+    "id": "camphora",
+    "imagePath": "/images/three-column",
+    "widths": [
+      256,
+      455,
+      640,
+      768,
+      960,
+      1024,
+      1366,
+      1920
+    ],
+    "format": [
+      "jpg",
+      "webp"
+    ],
+    "aspectRatio": "0.67",
+    "alt": "camphora",
+    "breakPoint": "(min-width: 999px) min(calc((100vw - 6.4rem) / 3), calc((111rem - 6.4) / 3)), (min-width: 847px) calc(50vw -4rem), calc(100vw -4rem)"
+  },
+  {
+    "id": "cinerea",
+    "imagePath": "/images/three-column",
+    "widths": [
+      256,
+      455,
+      640,
+      768,
+      960,
+      1024,
+      1366,
+      1920
+    ],
+    "format": [
+      "jpg",
+      "webp"
+    ],
+    "aspectRatio": "0.67",
+    "alt": "cinerea",
+    "breakPoint": "(min-width: 999px) min(calc((100vw - 6.4rem) / 3), calc((111rem - 6.4) / 3)), (min-width: 847px) calc(50vw -4rem), calc(100vw -4rem)"
+  },
+  {
+    "id": "coccifera",
+    "imagePath": "/images/three-column",
+    "widths": [
+      256,
+      455,
+      640,
+      768,
+      960,
+      1024,
+      1366,
+      1920
+    ],
+    "format": [
+      "jpg",
+      "webp"
+    ],
+    "aspectRatio": "0.67",
+    "alt": "coccifera",
+    "breakPoint": "(min-width: 999px) min(calc((100vw - 6.4rem) / 3), calc((111rem - 6.4) / 3)), (min-width: 847px) calc(50vw -4rem), calc(100vw -4rem)"
+  },
+  {
+    "id": "eucalyptus-oils",
+    "imagePath": "/images/three-column",
+    "widths": [
+      256,
+      455,
+      640,
+      768,
+      960,
+      1024,
+      1366,
+      1920
+    ],
+    "format": [
+      "jpg",
+      "webp"
+    ],
+    "aspectRatio": "1.40",
+    "alt": "eucalyptus oils",
+    "breakPoint": "(min-width: 999px) min(calc((100vw - 6.4rem) / 3), calc((111rem - 6.4) / 3)), (min-width: 847px) calc(50vw -4rem), calc(100vw -4rem)"
+  },
+  {
+    "id": "glaucescens",
+    "imagePath": "/images/three-column",
+    "widths": [
+      256,
+      455,
+      640,
+      768,
+      960,
+      1024,
+      1366,
+      1920
+    ],
+    "format": [
+      "jpg",
+      "webp"
+    ],
+    "aspectRatio": "0.67",
+    "alt": "glaucescens",
+    "breakPoint": "(min-width: 999px) min(calc((100vw - 6.4rem) / 3), calc((111rem - 6.4) / 3)), (min-width: 847px) calc(50vw -4rem), calc(100vw -4rem)"
+  },
+  {
+    "id": "gunni",
+    "imagePath": "/images/three-column",
+    "widths": [
+      256,
+      455,
+      640,
+      768,
+      960,
+      1024,
+      1366,
+      1920
+    ],
+    "format": [
+      "jpg",
+      "webp"
+    ],
+    "aspectRatio": "0.67",
+    "alt": "gunni",
+    "breakPoint": "(min-width: 999px) min(calc((100vw - 6.4rem) / 3), calc((111rem - 6.4) / 3)), (min-width: 847px) calc(50vw -4rem), calc(100vw -4rem)"
+  },
+  {
+    "id": "johnstonii",
+    "imagePath": "/images/three-column",
+    "widths": [
+      256,
+      455,
+      640,
+      768,
+      960,
+      1024,
+      1366,
+      1920
+    ],
+    "format": [
+      "jpg",
+      "webp"
+    ],
+    "aspectRatio": "0.67",
+    "alt": "johnstonii",
+    "breakPoint": "(min-width: 999px) min(calc((100vw - 6.4rem) / 3), calc((111rem - 6.4) / 3)), (min-width: 847px) calc(50vw -4rem), calc(100vw -4rem)"
+  },
+  {
+    "id": "neglecta",
+    "imagePath": "/images/three-column",
+    "widths": [
+      256,
+      455,
+      640,
+      768,
+      960,
+      1024,
+      1366,
+      1920
+    ],
+    "format": [
+      "jpg",
+      "webp"
+    ],
+    "aspectRatio": "0.67",
+    "alt": "neglecta",
+    "breakPoint": "(min-width: 999px) min(calc((100vw - 6.4rem) / 3), calc((111rem - 6.4) / 3)), (min-width: 847px) calc(50vw -4rem), calc(100vw -4rem)"
+  },
+  {
+    "id": "nicholii",
+    "imagePath": "/images/three-column",
+    "widths": [
+      256,
+      455,
+      640,
+      768,
+      960,
+      1024,
+      1366,
+      1920
+    ],
+    "format": [
+      "jpg",
+      "webp"
+    ],
+    "aspectRatio": "0.67",
+    "alt": "nicholii",
+    "breakPoint": "(min-width: 999px) min(calc((100vw - 6.4rem) / 3), calc((111rem - 6.4) / 3)), (min-width: 847px) calc(50vw -4rem), calc(100vw -4rem)"
+  },
+  {
+    "id": "nicholii-cross-acaciiformis",
+    "imagePath": "/images/three-column",
+    "widths": [
+      256,
+      455,
+      640,
+      768,
+      960,
+      1024,
+      1366,
+      1920
+    ],
+    "format": [
+      "jpg",
+      "webp"
+    ],
+    "aspectRatio": "0.67",
+    "alt": "nicholii cross acaciiformis",
+    "breakPoint": "(min-width: 999px) min(calc((100vw - 6.4rem) / 3), calc((111rem - 6.4) / 3)), (min-width: 847px) calc(50vw -4rem), calc(100vw -4rem)"
+  },
+  {
+    "id": "nitens",
+    "imagePath": "/images/three-column",
+    "widths": [
+      256,
+      455,
+      640,
+      768,
+      960,
+      1024,
+      1366,
+      1920
+    ],
+    "format": [
+      "jpg",
+      "webp"
+    ],
+    "aspectRatio": "0.67",
+    "alt": "nitens",
+    "breakPoint": "(min-width: 999px) min(calc((100vw - 6.4rem) / 3), calc((111rem - 6.4) / 3)), (min-width: 847px) calc(50vw -4rem), calc(100vw -4rem)"
+  },
+  {
+    "id": "parvula",
+    "imagePath": "/images/three-column",
+    "widths": [
+      256,
+      455,
+      640,
+      768,
+      960,
+      1024,
+      1366,
+      1920
+    ],
+    "format": [
+      "jpg",
+      "webp"
+    ],
+    "aspectRatio": "0.67",
+    "alt": "parvula",
+    "breakPoint": "(min-width: 999px) min(calc((100vw - 6.4rem) / 3), calc((111rem - 6.4) / 3)), (min-width: 847px) calc(50vw -4rem), calc(100vw -4rem)"
+  },
+  {
+    "id": "pauciflora",
+    "imagePath": "/images/three-column",
+    "widths": [
+      256,
+      455,
+      640,
+      768,
+      960,
+      1024,
+      1366,
+      1920
+    ],
+    "format": [
+      "jpg",
+      "webp"
+    ],
+    "aspectRatio": "0.67",
+    "alt": "pauciflora",
+    "breakPoint": "(min-width: 999px) min(calc((100vw - 6.4rem) / 3), calc((111rem - 6.4) / 3)), (min-width: 847px) calc(50vw -4rem), calc(100vw -4rem)"
+  },
+  {
+    "id": "pauciflora-niphophila",
+    "imagePath": "/images/three-column",
+    "widths": [
+      256,
+      455,
+      640,
+      768,
+      960,
+      1024,
+      1366,
+      1920
+    ],
+    "format": [
+      "jpg",
+      "webp"
+    ],
+    "aspectRatio": "0.67",
+    "alt": "pauciflora niphophila",
+    "breakPoint": "(min-width: 999px) min(calc((100vw - 6.4rem) / 3), calc((111rem - 6.4) / 3)), (min-width: 847px) calc(50vw -4rem), calc(100vw -4rem)"
+  },
+  {
+    "id": "perriniana",
+    "imagePath": "/images/three-column",
+    "widths": [
+      256,
+      455,
+      640,
+      768,
+      960,
+      1024,
+      1366,
+      1920
+    ],
+    "format": [
+      "jpg",
+      "webp"
+    ],
+    "aspectRatio": "0.67",
+    "alt": "perriniana",
+    "breakPoint": "(min-width: 999px) min(calc((100vw - 6.4rem) / 3), calc((111rem - 6.4) / 3)), (min-width: 847px) calc(50vw -4rem), calc(100vw -4rem)"
+  },
+  {
+    "id": "pulverulenta",
+    "imagePath": "/images/three-column",
+    "widths": [
+      256,
+      455,
+      640,
+      768,
+      960,
+      1024,
+      1366,
+      1920
+    ],
+    "format": [
+      "jpg",
+      "webp"
+    ],
+    "aspectRatio": "0.67",
+    "alt": "pulverulenta",
+    "breakPoint": "(min-width: 999px) min(calc((100vw - 6.4rem) / 3), calc((111rem - 6.4) / 3)), (min-width: 847px) calc(50vw -4rem), calc(100vw -4rem)"
+  },
+  {
+    "id": "stellulata",
+    "imagePath": "/images/three-column",
+    "widths": [
+      256,
+      455,
+      640,
+      768,
+      960,
+      1024,
+      1366,
+      1920
+    ],
+    "format": [
+      "jpg",
+      "webp"
+    ],
+    "aspectRatio": "0.67",
+    "alt": "stellulata",
+    "breakPoint": "(min-width: 999px) min(calc((100vw - 6.4rem) / 3), calc((111rem - 6.4) / 3)), (min-width: 847px) calc(50vw -4rem), calc(100vw -4rem)"
+  },
+  {
+    "id": "timber",
+    "imagePath": "/images/three-column",
+    "widths": [
+      256,
+      455,
+      640,
+      768,
+      960,
+      1024,
+      1366,
+      1920
+    ],
+    "format": [
+      "jpg",
+      "webp"
+    ],
+    "aspectRatio": "1.48",
+    "alt": "timber",
+    "breakPoint": "(min-width: 999px) min(calc((100vw - 6.4rem) / 3), calc((111rem - 6.4) / 3)), (min-width: 847px) calc(50vw -4rem), calc(100vw -4rem)"
+  },
+  {
+    "id": "wreaths",
+    "imagePath": "/images/three-column",
+    "widths": [
+      256,
+      455,
+      640,
+      768,
+      960,
+      1024,
+      1366,
+      1920
+    ],
+    "format": [
+      "jpg",
+      "webp"
+    ],
+    "aspectRatio": "1.44",
+    "alt": "wreaths",
+    "breakPoint": "(min-width: 999px) min(calc((100vw - 6.4rem) / 3), calc((111rem - 6.4) / 3)), (min-width: 847px) calc(50vw -4rem), calc(100vw -4rem)"
+  },
+  {
+    "id": "arrangements",
+    "imagePath": "/images/three-column-small",
+    "widths": [
+      256,
+      455,
+      640,
+      768,
+      960,
+      1024,
+      1366,
+      1920
+    ],
+    "format": [
+      "jpg",
+      "webp"
+    ],
+    "aspectRatio": "0.77",
+    "alt": "arrangements",
+    "breakPoint": "(min-width: 848px) calc((85em - 11.2em) / 3), calc(100vw - 4em)"
+  },
+  {
+    "id": "crafts",
+    "imagePath": "/images/three-column-small",
+    "widths": [
+      256,
+      455,
+      640,
+      768,
+      960,
+      1024,
+      1366,
+      1920
+    ],
+    "format": [
+      "jpg",
+      "webp"
+    ],
+    "aspectRatio": "0.77",
+    "alt": "crafts",
+    "breakPoint": "(min-width: 848px) calc((85em - 11.2em) / 3), calc(100vw - 4em)"
+  },
+  {
+    "id": "wreaths(2)",
+    "imagePath": "/images/three-column-small",
+    "widths": [
+      256,
+      455,
+      640,
+      768,
+      960,
+      1024,
+      1366,
+      1920
+    ],
+    "format": [
+      "jpg",
+      "webp"
+    ],
+    "aspectRatio": "1.00",
+    "alt": "wreaths(2)",
+    "breakPoint": "(min-width: 848px) calc((85em - 11.2em) / 3), calc(100vw - 4em)"
+  },
+  {
+    "id": "about",
+    "imagePath": "/images/two-column",
+    "widths": [
+      256,
+      455,
+      640,
+      768,
+      960,
+      1024,
+      1366,
+      1920
+    ],
+    "format": [
+      "jpg",
+      "webp"
+    ],
+    "aspectRatio": "1.33",
+    "alt": "about",
+    "breakPoint": "(min-width: 848px) min(calc(50vw - 4rem), calc(107rem / 2)), calc(100vw - 4rem)"
+  },
+  {
+    "id": "oils",
+    "imagePath": "/images/two-column",
+    "widths": [
+      256,
+      455,
+      640,
+      768,
+      960,
+      1024,
+      1366,
+      1920
+    ],
+    "format": [
+      "jpg",
+      "webp"
+    ],
+    "aspectRatio": "0.75",
+    "alt": "oils",
+    "breakPoint": "(min-width: 848px) min(calc(50vw - 4rem), calc(107rem / 2)), calc(100vw - 4rem)"
+  },
+  {
+    "id": "stems-foliage",
+    "imagePath": "/images/two-column",
+    "widths": [
+      256,
+      455,
+      640,
+      768,
+      960,
+      1024,
+      1366,
+      1920
+    ],
+    "format": [
+      "jpg",
+      "webp"
+    ],
+    "aspectRatio": "1.33",
+    "alt": "stems foliage",
+    "breakPoint": "(min-width: 848px) min(calc(50vw - 4rem), calc(107rem / 2)), calc(100vw - 4rem)"
+  },
+  {
+    "id": "summer-mix",
+    "imagePath": "/images/two-column",
+    "widths": [
+      256,
+      455,
+      640,
+      768,
+      960,
+      1024,
+      1366,
+      1920
+    ],
+    "format": [
+      "jpg",
+      "webp"
+    ],
+    "aspectRatio": "1.33",
+    "alt": "summer mix",
+    "breakPoint": "(min-width: 848px) min(calc(50vw - 4rem), calc(107rem / 2)), calc(100vw - 4rem)"
+  },
+  {
+    "id": "winter-mix",
+    "imagePath": "/images/two-column",
+    "widths": [
+      256,
+      455,
+      640,
+      768,
+      960,
+      1024,
+      1366,
+      1920
+    ],
+    "format": [
+      "jpg",
+      "webp"
+    ],
+    "aspectRatio": "1.00",
+    "alt": "winter mix",
+    "breakPoint": "(min-width: 848px) min(calc(50vw - 4rem), calc(107rem / 2)), calc(100vw - 4rem)"
+  }
+]

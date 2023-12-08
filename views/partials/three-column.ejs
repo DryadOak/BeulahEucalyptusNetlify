@@ -1,0 +1,14 @@
+<div class="even-columns">
+    <% columns.forEach(function(column) { %>
+    <div class="padding-block-300">
+        <%- include('../partials/imageSrcset', { image: images.find(image =>
+        image.id === column.imageId) }) %>
+        <div class="padding-block-400">
+            <h3 class="fs-secondary-heading fw-regular">
+                <%= column.heading %>
+            </h3>
+            <!-- <p class="padding-block-300 fs-400"><= column.paragraph %></p> -->
+        </div>
+    </div>
+    <% }); %>
+</div>

@@ -1,0 +1,116 @@
+
+<section class="hero padding-block-700 text-neutral-100 text-center">
+	<div class="container">
+		<h1 class="fs-primary-heading fw-regular">Welcome to Beulah Eucalyptus</h1>
+		<p class="padding-block-900">Supplying high quality eucalyptus foliage for three generations, we run a small biodiverse plantation located on the edge of Dartmoor.</p>
+		<button class="button"><a href="about">Learn more</a></button>
+	</div>
+</section>
+<section id="what-we-offer">
+	<section class="eucalyptus-foliage padding-block-900">
+		<div class="container">
+			<h2 class="fs-secondary-heading fw-regular" >Eucalyptus Foliage</h2>
+			<p class="padding-block-300">We offer a variety of natural foliage as well as a limited selection of flowers. The original eucalyptus plantation has been adapted to grow a wide range of species in a biodiverse, chemical free environment. Whether you're a wholesale customer, florist or indivdaul, we tailor our services to you, with no minimum order.</p>
+			<div class="even-columns">
+				<div class="img-container padding-block-300">
+					<%- include('partials/imageSrcset', { image: images.find(image => image.id === 'stems-foliage'), containerClass: 'img-container' }) %>
+				</div>
+				<div>
+					<p class="padding-block-300"> We usually sell foliage by the stem, in mixed seasonal bunches or as large branches for architectural decoration. <a href="foliage" class="link">Click here for more information on stems, bunches and the variety of species we offer,</a>.</p>
+					<p>This years approximate prices are: 
+						<ul role="list" class="padding-block-300">
+							<li>50p per 1ft stem</li>
+							<li>£1 per 2ft stem</li>
+							<li>£2 per 3ft stem</li>
+						</ul>
+					longer branches and arrangements priced on order. Please ask for seasonal special offers.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="container even-columns top-align-rows">
+		<section class="seasonal padding-block-300">
+			<a href="arrangements-and-crafts">
+				<div class="service-card">
+					<%- include('partials/imageSrcset', { image: images.find(image => image.id === 'wreaths') }) %>
+					<div class="service-card-text padding-block-400">
+						<h3 class="fs-secondary-heading fw-regular">Arrangements, Wreaths & Crafts</h3>
+						<p class="padding-block-300 fs-400">We carefully craft bespoke floral arrangements and wreaths. These are unique pieces that require a lot of hours and love, so a reasonable lead time is required. In addition, many of our plants are great for arts and craft, from confetti to perfume.<a href="arrangements-and-crafts" class="link">If this interests you, find out more about our arrangements, wreaths and crafts here</a>.</p>
+					</div>
+				</div>
+			</a>
+		</section>
+		<section class="oils padding-block-300">
+			<a href="oils">
+				<div class="service-card">
+					<%- include('partials/imageSrcset', { image: images.find(image => image.id === 'eucalyptus-oils') }) %>
+					<div class="service-card-text padding-block-400">
+						<h3 class="fs-secondary-heading fw-regular" >Eucalyptus Infused Oils</h3>
+						<p class="padding-block-300 fs-400">Tree and herb infused oils grown and made in the re-wilds of a Beulah plantation in Dartmoor. For perfume, hair and beards, tool care and even magic.<a href="oils" class="link">Click here for more on the various mixes and concoctions we create.</a></p>
+					</div>
+				</div>
+			</a>
+		</section>
+		<section class="other offers padding-block-300">
+			<div class="service-card">
+				<%- include('partials/imageSrcset', { image: images.find(image => image.id === 'timber') }) %>
+				<div class="service-card-text padding-block-400">
+					<h3 class="fs-secondary-heading fw-regular" >Other Offers</h3>
+					<p class="padding-block-300 fs-400">We can occasionally offer timber, firewood, willow wands and saplings. We also have our Beulah craft collective; we currently have skilled artists working here covering blacksmithing, pottery, carpentry, illustration, sculpture, L.A.R.P. props and upcycled instruments. <a href="contact" class="link">Get in touch</a> for more information.</p>
+				</div>						
+			</div>
+	</section>
+	</section>
+</div>
+
+<section class="carousel padding-block-600 text-center">
+	<div class="container">
+		<h2 class="fs-secondary-heading">Let Our Customers Speak For Us</h3>
+			<ul class="slider">
+				<li class="fs-400">
+					<img src="images/logo-icons-avatars/avatar3.png" alt="#">
+					<h3 class="fw-semi-bold">Julie</h3>
+					<p>Just had my first order from Beulah Eucalyptus to make my Christmas wreaths, ordering and collection was very easy and efficient. I was very pleased with the quality of the eucalyptus and greenery.  Beulah Eucalyptus is a must for anyone who enjoys flower arranging</p>
+				</li>
+				<li class="fs-400">
+					<img src="images/logo-icons-avatars/avatar2.png" alt="#">
+					<h3 class="fw-semi-bold">Lichen and Berries</h3>
+					<p>For the last few years, Esther has been our main eucalyptus supplier for our homemade wreaths and wreath kits. Esther is exceptionally reliable, providing four varieties of freshly cut eucalyptus to order that's always great quality. I'd highly recommend Esther to anyone looking for a supplier in the area! </p>
+				</li>
+				<li class="fs-400">
+					<img src="images/logo-icons-avatars/avatar1.png" alt="#">
+					<h3 class="fw-semi-bold">Mila</h3>
+					<p>This is the best quality oil I've ever tried; definitely coming back for more when this bottle is done!</p>
+				</li>
+				<li class="fs-400">
+					<img src="images/logo-icons-avatars/avatar3.png" alt="#">
+					<h3 class="fw-semi-bold">Anonymous</h3>
+					<p>Esther was spot on with her selection of the type I needed, and has a huge wealth of knowledge of the trees, plus how and where to use the foliage. Esther has always been so accommodating and her plantation is a wonderous place to spend time learning about the species. I appreciate you and what you do.</p>
+				</li>
+			</ul>
+				<button class="button" id="review-button">Leave a review</button>
+				<div class="padding-block-600 margin-inline-600 collapsible-form">
+					<form id="review-form" method="post" action="/" class="padding-inline-300">
+						<div class="div-form-group message-full-width">
+							<label for="name">Name or Organisation</label>
+							<input 
+							type="text"
+							name="name"
+							id="name"
+							required
+							class="form-element"
+							placeholder="florists are us">
+						</div>
+						<div class="div-form-group message-full-width">
+							<label for="message">Your Review</label>
+							<textarea name="message" id="message" class="form-element" required></textarea>
+						</div>
+						<div class="submit-group">
+							<input type="submit" value="send review">
+						</div>
+						<div id="review-message-container" class="hidden message-full-width"></div>
+					</form>
+				</div>
+	</div>
+</section>
+

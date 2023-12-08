@@ -1,0 +1,145 @@
+<section>
+    <div class="container padding-block-600">
+        <div class="even-columns flow">
+            <div class="flow">
+                <h1 class="fs-secondary-heading fw-regular">Foliage</h1>
+                <p>
+                    We pride ourselves in supplying affordable foliage in an
+                    environmentally conscious way, looking after our wildlife
+                    and customers together. Our eucalyptus is exposed to the
+                    Dartmoor weather and its animals and insects, so seasonal
+                    variance is to be expected. Sometime minor marks on the
+                    leaves or wiggly branches. As a rule, the best quality
+                    foliage is the select for floristry, and the seconds get
+                    turned into oils and dyes. Here is a price guide for this
+                    year:
+                </p>
+                <table class="spaced-table">
+                    <tbody>
+                        <tr>
+                            <td>Price per stem</td>
+                        </tr>
+                        <tr>
+                            <td>length in ft</td>
+                            <td>length in cm</td>
+                            <td>price</td>
+                        </tr>
+                        <tr>
+                            <td>1ft</td>
+                            <td>30cm</td>
+                            <td>50p</td>
+                        </tr>
+                        <tr>
+                            <td>2ft</td>
+                            <td>60cm</td>
+                            <td>£1</td>
+                        </tr>
+                        <tr>
+                            <td>3ft</td>
+                            <td>90cm</td>
+                            <td>£2</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <%- include('partials/imageSrcset', { image: images.find(image => image.id === 'winter-mix'), containerClass: 'img-container' }) %>
+        </div>
+        <div class="even-columns flow padding-block-900">
+            <div>
+                <p class="padding-block-600">
+                    We offer mix seasonal bunches consisting of a range of
+                    eucalypts and other evergreen foliage including Teetree,
+                    Olive, Acacia, Nothofagus, Stephanandra, Camelia and
+                    Pittosporum. As well as the winter favourites; variegated
+                    Holly, Ivy, Fir and Bay. We also grow many seasonal foliages
+                    and have a huge diversity of native trees, herbs and flowers
+                    in our rewilded areas so it's worth asking if you have
+                    something in mind. For more information on seasonal foliage
+                    or if you have any specific requirements,
+                    <a class="link" href="contact">please get in touch.</a>
+                </p>
+            </div>
+            <%- include('partials/imageSrcset', { image: images.find(image => image.id === 'summer-mix'), containerClass: 'img-container' }) %>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <p>
+            Eucalyptus species exhibit remarkable variations between subspecies,
+            leaves at different stages of tree development, and throughout the
+            changing seasons. With this rich diversity in mind, it can be more
+            practical to identify the leaf's shape, size, and colour that suits
+            your specific needs rather than relying solely on the species name.
+            Trees also showcase a dynamic array of features, including buds,
+            flowers, and seeds throughout the year. Below, you'll find a list of
+            our Eucalyptus species categorised by leaf shape.<a
+                class="link"
+                href="varieties-info"
+                >If you still wish to view our foliage by species name alone,
+                you'll find more details here</a
+            >
+        </p>
+        <div class="grid-table-container padding-block-900">
+            <div class="table-item span-full-width fs-600 fw-regular">
+                Eucalyptus Leaf Shape
+            </div>
+            <div class="table-item fs-400">Small</div>
+            <div class="table-item fs-400">Large</div>
+            <div class="table-item span-full-width">
+                <%- include('partials/imageSrcset', { image: images.find(image => image.id === 'willow-eucalyptus-leaf-shape') }) %>
+                <span class="center-item">Willow</span>
+            </div>
+            <div class="table-item">
+                <ul class="regular-list">
+                    <li>Acaciiformis</li>
+                    <li>Nicolii</li>
+                    <li>Stellulata</li>
+                </ul>
+            </div>
+            <div class="table-item">
+                <ul class="regular-list">
+                    <li>Nitens (adult)</li>
+                    <li>Pauciflora</li>
+                </ul>
+            </div>
+            <div class="table-item span-full-width">
+                <%- include('partials/imageSrcset', { image: images.find(image => image.id === 'almond-eucalyptus-leaf-shape') }) %>
+                <span class="center-item">Almond</span>
+            </div>
+            <div class="table-item">
+                <ul class="regular-list">
+                    <li>Parvula</li>
+                </ul>
+            </div>
+            <div class="table-item">
+                <ul class="regular-list">
+                    <li>Coccifera</li>
+                    <li>Glaucescens (adult)</li>
+                    <li>Jarrah</li>
+                </ul>
+            </div>
+            <div class="table-item span-full-width">
+                <%- include('partials/imageSrcset', { image: images.find(image => image.id === 'round-eucalyptus-leaf-shape') }) %>
+                <span class="center-item">Round</span>
+            </div>
+            <div class="table-item">
+                <ul class="regular-list">
+                    <li>Glaucescens (juvenile)</li>
+                    <li>Gunni</li>
+                    <li>Johnstonii</li>
+                    <li>Perriniana</li>
+                    <li>Pulverulenta</li>
+                </ul>
+            </div>
+            <div class="table-item">
+                <ul class="regular-list">
+                    <li>Camphora</li>
+                    <li>Cinerea</li>
+                    <li>Neglecta</li>
+                    <li>Nitens (juvenile)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

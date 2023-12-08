@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="<%- description %>" />
+        <meta name="keywords" content="<%- keywords %>" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title><%- title %></title>
+        <!-- need to mod this so slidder is only used for home -->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <!-- Conditional inclusion of slidder; home page-specific resources -->
+        <% hasSlider = typeof hasSlider !== 'undefined' ? hasSlider : false %>
+        <% if (hasSlider) { %>
+        <link
+            rel="stylesheet"
+            href="//unpkg.com/a11y-slider@latest/dist/a11y-slider.css"
+        />
+        <script src="//unpkg.com/a11y-slider@latest/dist/a11y-slider.js"></script>
+        <% } %>
+        <script type="module" src="/js/main.js"></script>
+    </head>
+    <body>
+        <%- include('../partials/header') %>
+        <main><%- body %></main>
+        <%- include('../partials/footer') %>
+    </body>
+</html>

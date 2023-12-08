@@ -1,0 +1,27 @@
+<% containerClass = typeof containerClass !== 'undefined' ? containerClass : false %>
+<% imgClass = typeof imgClass !== 'undefined' ? imgClass : false %>
+
+<div class="blur-load<%= containerClass ? ` ${containerClass}` : '' %>">
+    <img src="<%- `${image.imagePath}/${image.format[0]}/${image.id}-${image.widths[0]}.${image.format[0]}` %>"
+    srcset="<% image.format.forEach(function(format) { %>
+               <% if (format === 'webp') { %>
+                   <% image.widths.forEach(function(width) { %>
+                       <%- `${image.imagePath}/${format}/${image.id}-${width}.${format} ${width}w` %>,
+                   <% }); %>
+               <% } %>
+            <% }); %>
+            <% image.format.forEach(function(format) { %>
+               <% if (format !== 'webp') { %>
+                   <% image.widths.forEach(function(width) { %>
+                       <%- `${image.imagePath}/${format}/${image.id}-${width}.${format} ${width}w` %>,
+                   <% }); %>
+               <% } %>
+            <% }); %>"
+    sizes="<%- image.breakPoint %>"
+    alt="<%- image.alt %>"
+    style="aspect-ratio: <%= image.aspectRatio %>"
+    <% if (imgClass) { %>
+    class="<%= imgClass %>"
+    <% } %>
+    >
+</div>

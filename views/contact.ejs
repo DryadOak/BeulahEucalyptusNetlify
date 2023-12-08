@@ -1,0 +1,84 @@
+<section class="section-contact padding-block-700">
+    <div class="container">
+        <h1 class="fs-primary-heading">Contact Us</h1>
+        <p class="padding-block-300">
+            To place an order or for general inquiries feel free to call on
+            <a class="link" href="tel:07853 535313">07853 535313</a>, email us
+            at
+            <a
+                class="link"
+                href="mailto:essemail100@gmail.com?subject=Beulah%20Eucalyptus"
+                >essemail100@gmail.com</a
+            >
+            or fill out the form below:
+        </p>
+        <div class="form-container">
+            <form
+                id="contact-form"
+                method="post"
+                action="/contact"
+                enctype="application/x-www-form-urlencoded"
+            >
+                <div class="div-form-group">
+                    <label for="name">Name*</label>
+                    <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        required
+                        class="form-element"
+                        placeholder="John Smith"
+                    />
+                </div>
+                <div class="div-form-group">
+                    <label for="email">Email*</label>
+                    <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        required
+                        class="form-element"
+                        placeholder="name@gmail.com"
+                    />
+                </div>
+                <div class="div-form-group">
+                    <label for="tel">Tel</label>
+                    <input
+                        type="tel"
+                        name="tel"
+                        id="tel"
+                        class="form-element"
+                        placeholder="phone number"
+                    />
+                </div>
+                <div class="div-form-group">
+                    <label for="company">Company/Organisation</label>
+                    <input
+                        type="text"
+                        name="company"
+                        id="company"
+                        class="form-element"
+                        placeholder="florists are us"
+                    />
+                </div>
+                <div class="div-form-group message-full-width">
+                    <label for="message">Your message*</label>
+                    <textarea
+                        name="message"
+                        id="message"
+                        class="form-element"
+                        placeholder="Hi, I would like to places an order for..."
+                        required
+                    ></textarea>
+                </div>
+                <div class="submit-group">
+                    <input type="submit" value="send message" />
+                </div>
+                <div
+                    id="contact-message-container"
+                    class="hidden message-full-width"
+                ></div>
+            </form>
+        </div>
+    </div>
+</section>
