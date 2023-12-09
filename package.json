@@ -1,12 +1,13 @@
 {
     "name": "beulaheucalyptus",
     "version": "1.0.0",
-    "type": "module",
+    "type": "commonjs",
     "description": "",
     "main": "app.js",
     "scripts": {
         "start": "node app.js", 
         "dev": "nodemon app.js",
+        "build": "node build.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "D Oak",

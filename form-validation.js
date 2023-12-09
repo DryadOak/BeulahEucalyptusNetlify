@@ -1,5 +1,5 @@
-import { body, validationResult } from "express-validator";
-import sanitizeHtml from "sanitize-html";
+const { body, validationResult } = require("express-validator");
+const sanitizeHtml = require("sanitize-html");
 
 // Function to validate UK phone numbers
 const validateUkPhoneNumber = (value) => {
@@ -21,8 +21,8 @@ const nameAndMessageValidationRules = [
         .isLength({ max: 2000 })
         .withMessage("Message is required"),
 ];
-export const reviewFormValidationRules = [...nameAndMessageValidationRules];
-export const contactFormValidationRules = [
+const reviewFormValidationRules = [...nameAndMessageValidationRules];
+const contactFormValidationRules = [
     ...nameAndMessageValidationRules,
     body("email").isEmail().withMessage("Invalid email address"),
     body("tel").optional().custom(validateUkPhoneNumber),
@@ -30,7 +30,7 @@ export const contactFormValidationRules = [
 ];
 
 // Validation middleware function
-export const validationMiddleware = (req, res, next) => {
+const validationMiddleware = (req, res, next) => {
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
         const errorMessages = errors.array().map((error) => error.msg);
@@ -40,8 +40,15 @@ export const validationMiddleware = (req, res, next) => {
 };
 
 // Sanitization function
-export const sanitizeFormData = (req) => {
+const sanitizeFormData = (req) => {
     for (const key in req.body) {
         req.body[key] = sanitizeHtml(req.body[key]);
     }
+};
+
+module.exports = {
+    reviewFormValidationRules,
+    contactFormValidationRules,
+    validationMiddleware,
+    sanitizeFormData,
 };

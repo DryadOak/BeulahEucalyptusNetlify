@@ -1,7 +1,5 @@
-import nodemailer from "nodemailer";
-import dotenv from "dotenv";
-
-dotenv.config();
+const nodemailer = require('nodemailer');
+require('dotenv').config();
 
 // Accessing environment variables
 const smtpService = process.env.SMTP_SERVICE;
@@ -71,4 +69,4 @@ const sendFormToEmail = (req, res, formType) => {
     });
 };
 
-export { sendFormToEmail };
+module.exports = { sendFormToEmail };

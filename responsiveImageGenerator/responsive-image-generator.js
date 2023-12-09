@@ -4,14 +4,14 @@
 
 "use strict";
 
-import fs from "fs";
-import path from "path";
-import { promisify } from "util";
-import { execSync } from "child_process";
-import sharp from "sharp";
-import sizeOf from "image-size";
+const fs = require("fs");
+const path = require("path");
+const { promisify } = require("util");
+const { execSync } = require("child_process");
+const sharp = require("sharp");
+const sizeOf = require("image-size");
 
-const readdir = fs.promises.readdir;
+const readdir = promisify(fs.readdir);
 const { stat, unlink } = fs.promises;
 
 class ImageProcessor {

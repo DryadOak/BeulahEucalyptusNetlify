@@ -2,10 +2,10 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta name="description" content="<%- description %>" />
-        <meta name="keywords" content="<%- keywords %>" />
+        <meta name="description" content="<%- headPageData.description %>" />
+        <meta name="keywords" content="<%- headPageData.keywords %>" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title><%- title %></title>
+        <title><%- headPageData.title %></title>
         <!-- need to mod this so slidder is only used for home -->
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,15 +17,15 @@
         <link rel="stylesheet" href="css/reset.css" />
         <link rel="stylesheet" href="css/style.css" />
         <!-- Conditional inclusion of slidder; home page-specific resources -->
-        <% hasSlider = typeof hasSlider !== 'undefined' ? hasSlider : false %>
-        <% if (hasSlider) { %>
+        <% headPageData.hasSlider = typeof headPageData.hasSlider !== 'undefined' ? headPageData.hasSlider : false %>
+        <% if (headPageData.hasSlider) { %>
         <link
             rel="stylesheet"
             href="//unpkg.com/a11y-slider@latest/dist/a11y-slider.css"
         />
         <script src="//unpkg.com/a11y-slider@latest/dist/a11y-slider.js"></script>
         <% } %>
-        <script type="module" src="/js/main.js"></script>
+        <script src="js/main.js"></script>
     </head>
     <body>
         <%- include('../partials/header') %>

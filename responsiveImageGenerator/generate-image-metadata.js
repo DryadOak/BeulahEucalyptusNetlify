@@ -20,9 +20,9 @@
 // If the new images you are adding do not fit an existing directory in the mediaQueriesConfig, please create and new one and add a comment clearly outlining its logic.
 
 "use strict";
-import { promises as fs } from "fs";
-import path from "path";
-import sharp from "sharp";
+const fs = require("fs").promises;
+const path = require("path");
+const sharp = require("sharp");
 
 // Configuration
 const config = {

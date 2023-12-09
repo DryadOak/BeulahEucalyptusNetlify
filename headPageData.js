@@ -67,5 +67,5 @@ const headPageData = {
         keywords: "Privacy Policy",
     },
 };
+module.exports = headPageData;
 
-export default headPageData;
