@@ -29,8 +29,7 @@ const forms = {
     },
 };
 
-// Email sending function
-const sendFormToEmail = (req, res, formType) => {
+const sendFormToEmail = async (req, res, formType) => {
     const { name } = req.body;
     const formConfig = forms[formType];
 
@@ -42,7 +41,9 @@ const sendFormToEmail = (req, res, formType) => {
         formConfig;
 
     const transporter = nodemailer.createTransport({
-        service: smtpService,
+        host: smtpService,
+        secure: true,
+        port: 465,
         auth: {
             user: smtpUser,
             pass: smtpPassword,
@@ -56,17 +57,17 @@ const sendFormToEmail = (req, res, formType) => {
         text: body(req.body),
     };
 
-    transporter.sendMail(mailOptions, (error, info) => {
-        if (error) {
-            console.error(error);
-            res.status(500).json({ message: clientErrorMsg });
-        } else {
-            console.log("Email sent: " + info.response);
-            res.status(200).json({
-                message: clientSuccessMsg,
-            });
-        }
-    });
+    try {
+        const info = await transporter.sendMail(mailOptions);
+        console.log("Email sent: " + info.response);
+        res.status(200).json({
+            message: clientSuccessMsg,
+        });
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ message: clientErrorMsg });
+    }
 };
 
 module.exports = { sendFormToEmail };
+
