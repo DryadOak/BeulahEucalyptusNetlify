@@ -1,6 +1,7 @@
 const express = require("express");
 const fs = require("fs");
 const path = require("path");
+const serverless = require("serverless-http")
 const { fileURLToPath } = require("url");
 
 // Import custom modules
@@ -9,11 +10,12 @@ const {
     contactFormValidationRules,
     validationMiddleware,
     sanitizeFormData,
-} = require("./form-validation.js");
-const { sendFormToEmail } = require("./email-config-and-sender.js");
+} = require("../form-validation.js");
+const { sendFormToEmail } = require("../email-config-and-sender.js");
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const router = express.Router()
+// const PORT = process.env.PORT || 3000;
 
 
 
@@ -24,7 +26,7 @@ app.use(express.urlencoded({ extended: true }));
 
 
 
-app.post(
+router.post(
     "/contact",
     contactFormValidationRules,
     validationMiddleware,
@@ -34,14 +36,14 @@ app.post(
     },
 );
 
-app.post("/", reviewFormValidationRules, validationMiddleware, (req, res) => {
+router.post("/", reviewFormValidationRules, validationMiddleware, (req, res) => {
     sanitizeFormData(req);
     sendFormToEmail(req, res, "review");
 });
 
 function createRoutes(paths) {
   paths.forEach((route) => {
-    app.get(route, (req, res) => {
+    router.get(route, (req, res) => {
       // Construct the absolute path to the HTML file based on the route
       const filePath = path.join(__dirname, 'public', route === "/" ? "index.html" :`${route}.html`);
 
@@ -81,6 +83,9 @@ app.use((err, req, res, next) => {
     res.status(500).send("Internal Server Error");
 });
 
-app.listen(PORT, () => {
-    console.log(`server running on port ${PORT}`);
-});
+// app.listen(PORT, () => {
+//     console.log(`server running on port ${PORT}`);
+// });
+app.use("/app/", router);
+
+module.exports.handler = serverless(app)
