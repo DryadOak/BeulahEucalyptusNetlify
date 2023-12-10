@@ -20,7 +20,7 @@ const router = express.Router()
 
 
 // // Middleware Setup for serving static files and JSON parsing
-app.use(express.static("public"));
+// app.use(express.static("public"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
