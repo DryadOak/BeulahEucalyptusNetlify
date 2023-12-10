@@ -15,12 +15,9 @@ const { sendFormToEmail } = require("../email-config-and-sender.js");
 
 const app = express();
 const router = express.Router()
-// const PORT = process.env.PORT || 3000;
-
-
 
 // // Middleware Setup for serving static files and JSON parsing
-// app.use(express.static("public"));
+app.use(express.static("public"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
@@ -83,9 +80,10 @@ app.use((err, req, res, next) => {
     res.status(500).send("Internal Server Error");
 });
 
-// app.listen(PORT, () => {
-//     console.log(`server running on port ${PORT}`);
-// });
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`server running on port ${PORT}`);
+});
 app.use("/app/", router);
 
 module.exports.handler = serverless(app)
