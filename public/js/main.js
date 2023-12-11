@@ -54,12 +54,12 @@ document.addEventListener("DOMContentLoaded", () => {
         {
             formId: "contact-form",
             messageContainerId: "contact-message-container",
-            route: "/contact",
+            route: "/app/contact",
         },
         {
             formId: "review-form",
             messageContainerId: "review-message-container",
-            route: "/",
+            route: "/app/",
         },
         // Add more forms and message containers here
     ];
