@@ -1,6 +1,32 @@
 "use strict";
 
 document.addEventListener("DOMContentLoaded", () => {
+    // Define contact information
+    (function () {
+        const contactInfo = {
+            email: "esther@beulaheucalyptus.co.uk",
+            tel: "07853 535313",
+        };
+
+        const emailContainer = document.querySelector(".emailContainer");
+        const telContainer = document.querySelectorAll(".telContainer");
+
+        if (emailContainer) {
+            emailContainer.innerHTML += `<a href="mailto:${contactInfo.email}">${contactInfo.email}</a>`;
+        }
+
+        if (telContainer.length > 0) {
+            telContainer.forEach((telContainer) => {
+                telContainer.innerHTML += `<a href="tel:${contactInfo.tel}">${contactInfo.tel}</a>`;
+            });
+        }
+    })();
+
+    // Display current year
+    const currentYearElement = document.querySelector("#currentYear");
+    const currentYear = new Date().getFullYear();
+    currentYearElement.innerHTML += currentYear;
+
     // Navigation
     const mobileNavToggle = document.querySelector(".mobile-nav-menu-btn");
     const primaryNavigation = document.querySelector(".primary-navigation");
@@ -10,11 +36,6 @@ document.addEventListener("DOMContentLoaded", () => {
         primaryHeader.toggleAttribute("data-overlay");
         primaryNavigation.toggleAttribute("data-visible");
     });
-
-    // Display current year
-    const currentYearElement = document.querySelector("#currentYear");
-    const currentYear = new Date().getFullYear();
-    currentYearElement.innerHTML += currentYear;
 
     // Slider
     const sliderElement = document.querySelector(".slider");

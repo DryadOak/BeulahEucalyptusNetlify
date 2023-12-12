@@ -5,7 +5,9 @@
   publish = "public"
 [dev]
   framework = "#custom"
+  functions = "functions"
   command = "npm start"
+  publish = "public"
   targetPort = 3000
 [functions]
   external_node_modules = ["express"]

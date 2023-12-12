@@ -80,10 +80,13 @@ app.use((err, req, res, next) => {
     res.status(500).send("Internal Server Error");
 });
 
-const PORT = process.env.PORT 
+
+app.use("/app/", router);
+
+// remove for production!!!
+const PORT = process.env.PORT || 3000 
 app.listen(PORT, () => {
     console.log(`server running on port ${PORT}`);
 });
-app.use("/app/", router);
 
 module.exports.handler = serverless(app)

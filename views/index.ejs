@@ -1,6 +1,17 @@
 
-<section class="hero padding-block-700 text-neutral-100 text-center">
-	<div class="container">
+<section class="hero-container text-neutral-100 text-center">
+		<picture>
+    		<source media="(max-width: 320px)" srcset="/images/background/webp/hero-320.webp 1x, /images/background/webp/hero-320-2x.webp 2x, /images/background/jpg/hero-320.jpg 1x, /images/background/jpg/hero-320-2x.jpg 2x">
+    		<source media="(max-width: 480px)" srcset="/images/background/webp/hero-480.webp 1x, /images/background/webp/hero-480-2x.webp 2x, /images/background/jpg/hero-480.jpg 1x, /images/background/jpg/hero-480-2x.jpg 2x">
+    		<source media="(max-width: 768px)" srcset="/images/background/webp/hero-768.webp 1x, /images/background/webp/hero-768-2x.webp 2x, /images/background/jpg/hero-768.jpg 1x, /images/background/jpg/hero-768-2x.jpg 2x">
+    		<source media="(max-width: 1024px)" srcset="/images/background/webp/hero-1024.webp 1x, /images/background/webp/hero-1024-2x.webp 2x, /images/background/jpg/hero-1024.jpg 1x, /images/background/jpg/hero-1024-2x.jpg 2x">
+    		<source media="(max-width: 1280px)" srcset="/images/background/webp/hero-1280.webp 1x, /images/background/webp/hero-1280-2x.webp 2x, /images/background/jpg/hero-1280.jpg 1x, /images/background/jpg/hero-1280-2x.jpg 2x">
+    		<source media="(max-width: 1920px)" srcset="/images/background/webp/hero-1920.webp 1x, /images/background/webp/hero-1920-2x.webp 2x, /images/background/jpg/hero-1920.jpg 1x, /images/background/jpg/hero-1920-2x.jpg 2x">
+    		<source media="(max-width: 2560px)" srcset="/images/background/webp/hero-2560.webp 1x, /images/background/webp/hero-2560-2x.webp 2x, /images/background/jpg/hero-2560.jpg 1x, /images/background/jpg/hero-2560-2x.jpg 2x">
+    		<source media="(min-width: 2561px)" srcset="/images/background/webp/hero-3840.webp 1x, /images/background/webp/hero-3840-2x.webp 2x, /images/background/jpg/hero-3840.jpg 1x, /images/background/jpg/hero-3840-2x.jpg 2x">
+    		<img src="/images/background/jpg/hero-320.jpg" alt="Hero Image" class="hero-img">
+		</picture>
+	<div class="hero-content-container">
 		<h1 class="fs-primary-heading fw-regular">Welcome to Beulah Eucalyptus</h1>
 		<p class="padding-block-900">Supplying high quality eucalyptus foliage for three generations, we run a small biodiverse plantation located on the edge of Dartmoor.</p>
 		<button class="button"><a href="about">Learn more</a></button>
@@ -16,7 +27,7 @@
 					<%- include('partials/imageSrcset', { image: images.find(image => image.id === 'stems-foliage'), containerClass: 'img-container' }) %>
 				</div>
 				<div>
-					<p class="padding-block-300"> We usually sell foliage by the stem, in mixed seasonal bunches or as large branches for architectural decoration. <a href="foliage" class="link">Click here for more information on stems, bunches and the variety of species we offer,</a>.</p>
+					<p class="padding-block-300"> We usually sell foliage by the stem, in mixed seasonal bunches or as large branches for architectural decoration. <a href="foliage" class="link">Click here for more information on stems, bunches and the variety of species we offer.</a></p>
 					<p>This years approximate prices are: 
 						<ul role="list" class="padding-block-300">
 							<li>50p per 1ft stem</li>
