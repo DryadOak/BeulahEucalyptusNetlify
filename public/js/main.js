@@ -101,11 +101,12 @@ document.addEventListener("DOMContentLoaded", () => {
     formConfigs.forEach(({ formId, messageContainerId, route }) => {
         const form = document.getElementById(formId);
         const messageContainer = document.getElementById(messageContainerId);
-        const submitButton = document.getElementById("submitButton");
+        const submitButton = document.querySelector("button.expand")
 
-        if (form && submitButton) {
+        if (form) {
             submitButton.addEventListener("click", async function (e) {
                 e.preventDefault();
+                submitButton.classList.add("loading");
                 await handleFormSubmit(form, messageContainer, route);
             });
         }
@@ -131,8 +132,22 @@ document.addEventListener("DOMContentLoaded", () => {
             const data = await response.json();
 
             if (data.errors) {
+                submitButton.classList.add("finished");
+				        setTimeout(() => {
+                            submitButton.classList.remove("loading");
+				        	submitButton.classList.remove("finished");
+				        	submitButton.disabled = false;
+				        }, 1500);
                 displayFormErrors(messageContainer, data.errors);
             } else if (data.message) {
+                submitButton.classList.add("loaded");
+				        submitButton.classList.add("finished");
+				        setTimeout(() => {
+				        	submitButton.classList.remove("finished");
+				        	submitButton.classList.remove("loaded");
+				        	submitButton.classList.remove("loading");
+				        	submitButton.disabled = false;
+				        }, 1500);
                 displayFormSuccess(messageContainer, data.message);
             } else if (!response.ok) {
                 console.error("Server responded with an error");
@@ -159,29 +174,28 @@ document.addEventListener("DOMContentLoaded", () => {
         messageContainer.classList.add("formMsg", "bg-primary-200");
     }
 
-    document.querySelector("button.expand").addEventListener(
-	"click",
-	function (e) {
-		e.preventDefault();
-		e.stopPropagation();
-		const button = e.currentTarget;
-		button.classList.add("loading");
-		button.disabled = true;
-		
-        setTimeout(() => {
-			button.classList.add("loaded");
-			setTimeout(() => {
-				button.classList.add("finished");
-				setTimeout(() => {
-					button.classList.remove("finished");
-					button.classList.remove("loaded");
-					button.classList.remove("loading");
-					button.disabled = false;
-				}, 1500);
-			}, 700);
-		}, 1500);
-	},
-	false
-);
+//     document.querySelector("button.expand").addEventListener(
+// 	"click",
+// 	function (e) {
+// 		e.preventDefault();
+// 		e.stopPropagation();
+// 		const button = e.currentTarget;
+// 		button.classList.add("loading");
+// 		button.disabled = true;
+// 		setTimeout(() => {
+// 			button.classList.add("loaded");
+// 			setTimeout(() => {
+// 				button.classList.add("finished");
+// 				setTimeout(() => {
+// 					button.classList.remove("finished");
+// 					button.classList.remove("loaded");
+// 					button.classList.remove("loading");
+// 					button.disabled = false;
+// 				}, 1500);
+// 			}, 700);
+// 		}, 1500);
+// 	},
+// 	false
+// );
 
 });

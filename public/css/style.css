@@ -652,7 +652,7 @@ input[type="submit"]:focus-visible {
             visibility: hidden;
             opacity: 0;
             transform: translateY(-70px);
-            transition: max-height 2s, visibility 1s, opacity 4s, transform 2s;
+            transition: max-height 1s, visibility 1s, opacity 2s, transform 2s;
             padding-bottom: 12rem;
             /* overflow: hidden; */
         }
