@@ -1,5 +1,6 @@
 
 <section class="hero-container text-neutral-100 text-center">
+	<div class="hero-load">
 		<picture>
     		<source media="(max-width: 320px)" srcset="/images/background/webp/hero-320.webp 1x, /images/background/webp/hero-320-2x.webp 2x, /images/background/jpg/hero-320.jpg 1x, /images/background/jpg/hero-320-2x.jpg 2x">
     		<source media="(max-width: 480px)" srcset="/images/background/webp/hero-480.webp 1x, /images/background/webp/hero-480-2x.webp 2x, /images/background/jpg/hero-480.jpg 1x, /images/background/jpg/hero-480-2x.jpg 2x">
@@ -11,6 +12,7 @@
     		<source media="(min-width: 2561px)" srcset="/images/background/webp/hero-3840.webp 1x, /images/background/webp/hero-3840-2x.webp 2x, /images/background/jpg/hero-3840.jpg 1x, /images/background/jpg/hero-3840-2x.jpg 2x">
     		<img src="/images/background/jpg/hero-320.jpg" alt="Hero Image" class="hero-img">
 		</picture>
+	</div>
 	<div class="hero-content-container">
 		<h1 class="fs-primary-heading fw-regular">Welcome to Beulah Eucalyptus</h1>
 		<p class="padding-block-900">Supplying high quality eucalyptus foliage for three generations, we run a small biodiverse plantation located on the edge of Dartmoor.</p>
@@ -18,7 +20,7 @@
 	</div>
 </section>
 <section id="what-we-offer">
-	<section class="eucalyptus-foliage padding-block-900">
+	<section class="eucalyptus-foliage padding-block-600">
 		<div class="container">
 			<h2 class="fs-secondary-heading fw-regular" >Eucalyptus Foliage</h2>
 			<p class="padding-block-300">We offer a variety of natural foliage as well as a limited selection of flowers. The original eucalyptus plantation has been adapted to grow a wide range of species in a biodiverse, chemical free environment. Whether you're a wholesale customer, florist or indivdaul, we tailor our services to you, with no minimum order.</p>
@@ -117,7 +119,18 @@
 							<textarea name="message" id="message" class="form-element" required></textarea>
 						</div>
 						<div class="submit-group">
-							<input type="submit" value="send review">
+							<button class="expand" id="submitButton">
+		                        Submit
+		                    <span class="expand-icon expand-hover">
+			                <svg class="first" xmlns="http://www.w3.org/2000/svg" fill="#000" viewBox="0 0 32 32" version="1.1">
+				            <path d="M8.489 31.975c-0.271 0-0.549-0.107-0.757-0.316-0.417-0.417-0.417-1.098 0-1.515l14.258-14.264-14.050-14.050c-0.417-0.417-0.417-1.098 0-1.515s1.098-0.417 1.515 0l14.807 14.807c0.417 0.417 0.417 1.098 0 1.515l-15.015 15.022c-0.208 0.208-0.486 0.316-0.757 0.316z" />
+			                </svg>
+			                <span class="loader"></span>
+			                <svg class="second" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="none">
+				            <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 5L8 15l-5-4" />
+			                </svg>
+		                    </span>
+	                        </button>
 						</div>
 						<div id="review-message-container" class="hidden message-full-width"></div>
 					</form>

@@ -353,6 +353,7 @@ main {
     margin: 0 auto;
     padding-top: 8rem;
     padding-bottom: 8rem;
+    max-height: 40rem;
 }
 
 .hero-container a {
@@ -420,6 +421,110 @@ footer a:hover {
 .button:focus-visible {
     background-color: var(--clr-primary-400);
     transition: 0.2s ease-in-out;
+}
+/*Submit expand btn, CodePen ny Yoann */
+button.expand {
+	--button-height: 48px;
+	overflow: hidden;
+	outline: none;
+	background-color: rgb(225, 228, 225);
+	border-radius: 8px;
+	padding: 10px 25px;
+	border: none;
+	color: black;
+	cursor: pointer;
+	position: relative;
+	transition: padding 0.3s;
+}
+ 
+.expand-icon {
+	--icon-size: 10px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: var(--button-height);
+	width: var(--button-height);
+	border-left: 1px solid #eee;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform: translateX(calc(var(--button-height) + 1px));
+	transition: transform 0.3s;
+}
+
+.expand-icon > svg {
+	height: var(--icon-size);
+	width: var(--icon-size);
+	transform: scale(1.5);
+	transition: transform 0.3s;
+}
+
+.expand-icon > svg.second {
+	display: none;
+	transform: scale(0) translateY(50px);
+	transition: transform 0.3s;
+}
+
+button.expand:hover,
+button.expand.loading {
+	padding-right: calc(25px + var(--button-height));
+}
+
+button.expand:hover > .expand-icon,
+button.expand.loading > .expand-icon {
+	transform: translateX(0);
+	transition: transform 0.3s 0.05s;
+}
+
+button.expand.loading > .expand-icon > svg {
+	transform: scale(0);
+}
+
+@keyframes rotate {
+	0% {
+		transform: scale(0.3) rotateZ(0deg);
+	}
+	100% {
+		transform: scale(0.3) rotateZ(360deg);
+	}
+}
+
+.loader {
+	--loader-size: 52px;
+	height: var(--loader-size);
+	width: var(--loader-size);
+	border: 4px solid black;
+	border-left-color: transparent;
+	border-right-color: transparent;
+	background-color: transparent;
+	border-radius: 50%;
+	animation: rotate 1.5s linear infinite;
+	position: absolute;
+	right: 0;
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 1s 0.3s;
+}
+
+button.expand.loading > span > span.loader {
+	opacity: 1;
+}
+
+button.expand.loaded > span > span.loader {
+	opacity: 0 !important;
+}
+
+button.expand.loaded > .expand-icon > svg.first {
+	display: none;
+}
+
+button.expand.loaded > .expand-icon > svg.second {
+	display: block;
+}
+
+button.expand.finished > .expand-icon > svg.second {
+	transform: scale(1.5) translateY(0px);
 }
 
 /* Slider Carousel */
@@ -541,26 +646,26 @@ input[type="submit"]:focus-visible {
         grid-column: 1 / -1;
     }
 }
+
 .collapsible-form {
     max-height: 0;
-    overflow: hidden;
-    transition:
-        max-height 0.3s ease,
-        visibility 0.3s ease,
-        opacity 0.3s ease,
-        transform 0.3s ease;
-    visibility: hidden;
-    opacity: 0;
-    transform: translateY(-20px);
-}
+            visibility: hidden;
+            opacity: 0;
+            transform: translateY(-70px);
+            transition: max-height 2s, visibility 1s, opacity 4s, transform 2s;
+            padding-bottom: 12rem;
+            /* overflow: hidden; */
+        }
 
-#review-button:focus + .collapsible-form,
-.collapsible-form:focus-within {
-    max-height: 700px;
-    visibility: visible;
-    opacity: 1;
-    transform: translateY(0);
-}
+.collapsible-form[data-visible] {
+            overflow: visible;
+            max-height: 700px;
+            visibility: visible;
+            opacity: 1;
+            transform: translateY(0);
+            
+        }
+
 
 /* Navigation - hamburger menu created by Mikael Ainalem */
 .nav-wrapper {

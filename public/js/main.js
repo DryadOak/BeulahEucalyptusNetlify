@@ -27,6 +27,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const currentYear = new Date().getFullYear();
     currentYearElement.innerHTML += currentYear;
 
+    // Review toggle
+    const reviewBtn = document.querySelector("#review-button");
+    const collapsibleForm = document.querySelector(".collapsible-form")
+     reviewBtn.addEventListener("click", () => {
+        collapsibleForm.toggleAttribute("data-visible");
+    });
+
     // Navigation
     const mobileNavToggle = document.querySelector(".mobile-nav-menu-btn");
     const primaryNavigation = document.querySelector(".primary-navigation");
@@ -54,21 +61,27 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Handles blurDivs for smoother img loading
+    // Creates loading effect for smoother img rendering by adding an effect class
     const blurDivs = document.querySelectorAll(".blur-load");
-    blurDivs.forEach((blurDiv) => {
-        const img = blurDiv.querySelector("img");
+    if (blurDivs.length > 0) {
+        applyLoadingEffect(blurDivs, "loaded");
+    }
 
-        function handleImageLoadAndBlur() {
-            blurDiv.classList.add("loaded");
-        }
+    function applyLoadingEffect(selector, effectClass) {
+        selector.forEach((effectDiv) => {
+            const img = effectDiv.querySelector("img");
 
-        if (img.complete) {
-            handleImageLoadAndBlur();
-        } else {
-            img.addEventListener("load", handleImageLoadAndBlur);
-        }
-    });
+            function handleLoadEffect() {
+                effectDiv.classList.add(effectClass);
+            }
+
+            if (img.complete) {
+                handleLoadEffect();
+            } else {
+                img.addEventListener("load", handleLoadEffect);
+            }
+        });
+    }
 
     // Form handling
     const formConfigs = [
@@ -88,9 +101,10 @@ document.addEventListener("DOMContentLoaded", () => {
     formConfigs.forEach(({ formId, messageContainerId, route }) => {
         const form = document.getElementById(formId);
         const messageContainer = document.getElementById(messageContainerId);
+        const submitButton = document.getElementById("submitButton");
 
-        if (form) {
-            form.addEventListener("submit", async function (e) {
+        if (form && submitButton) {
+            submitButton.addEventListener("click", async function (e) {
                 e.preventDefault();
                 await handleFormSubmit(form, messageContainer, route);
             });
@@ -144,4 +158,30 @@ document.addEventListener("DOMContentLoaded", () => {
         messageContainer.classList.remove("hidden", "bg-warning");
         messageContainer.classList.add("formMsg", "bg-primary-200");
     }
+
+    document.querySelector("button.expand").addEventListener(
+	"click",
+	function (e) {
+		e.preventDefault();
+		e.stopPropagation();
+		const button = e.currentTarget;
+		button.classList.add("loading");
+		button.disabled = true;
+		
+        setTimeout(() => {
+			button.classList.add("loaded");
+			setTimeout(() => {
+				button.classList.add("finished");
+				setTimeout(() => {
+					button.classList.remove("finished");
+					button.classList.remove("loaded");
+					button.classList.remove("loading");
+					button.disabled = false;
+				}, 1500);
+			}, 700);
+		}, 1500);
+	},
+	false
+);
+
 });
