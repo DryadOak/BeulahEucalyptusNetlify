@@ -23,11 +23,7 @@ app.use(express.urlencoded({ extended: true }));
 
 
 
-router.post(
-    "/contact",
-    contactFormValidationRules,
-    validationMiddleware,
-    (req, res) => {
+router.post("/contact", contactFormValidationRules, validationMiddleware, (req, res) => {
         sanitizeFormData(req);
         sendFormToEmail(req, res, "contact");
     },
