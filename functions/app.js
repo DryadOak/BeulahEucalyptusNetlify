@@ -1,8 +1,6 @@
 const express = require("express");
-const fs = require("fs");
 const path = require("path");
 const serverless = require("serverless-http")
-const { fileURLToPath } = require("url");
 
 // Import custom modules
 const {
