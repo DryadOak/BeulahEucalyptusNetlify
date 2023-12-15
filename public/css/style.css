@@ -652,21 +652,22 @@ input[type="submit"]:focus-visible {
 
 .collapsible-form {
     max-height: 0;
-            visibility: hidden;
-            opacity: 0;
-            transform: translateY(-70px);
-            transition: max-height 1s, visibility 1s, opacity 2s, transform 2s;
-            /* overflow: hidden; */
-        }
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-5px);
+    transition: max-height 1s, visibility 1s, opacity 2s, transform 2s;
+    overflow: hidden ;
+    
+}
 
 .collapsible-form[data-visible] {
-            overflow: visible;
-            max-height: 700px;
-            visibility: visible;
-            opacity: 1;
-            transform: translateY(0);
-            padding-bottom: 12rem;
-        }
+    overflow: visible;
+    max-height: 700px;
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    
+}
 
 
 /* Navigation - hamburger menu created by Mikael Ainalem */
