@@ -16,7 +16,7 @@ const { stat, unlink } = fs.promises;
 
 class ImageProcessor {
     constructor() {
-        this.scriptDir = path.dirname(decodeURI(new URL(import.meta.url).pathname.replace(/^\/([A-Za-z]:)\//, '$1/')));
+        this.scriptDir = path.dirname(require.main.filename);
         this.sourceDir = path.join(
             this.scriptDir,
             process.env.SOURCE_DIR || "original"
