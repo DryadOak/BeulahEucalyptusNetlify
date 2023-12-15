@@ -144,6 +144,7 @@ document.addEventListener("DOMContentLoaded", () => {
             } else if (data.message) {
                 submitButton.classList.add("loaded");
 				        submitButton.classList.add("finished");
+                        form.reset()
 				        setTimeout(() => {
 				        	submitButton.classList.remove("finished");
 				        	submitButton.classList.remove("loaded");
