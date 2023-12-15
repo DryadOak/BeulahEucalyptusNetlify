@@ -60,12 +60,12 @@ const sendFormToEmail = async (req, res, formType) => {
     try {
         const info = await transporter.sendMail(mailOptions);
         console.log("Email sent: " + info.response);
-        res.status(200).json({
+        return res.status(200).json({
             message: clientSuccessMsg,
         });
     } catch (error) {
         console.error(error);
-        res.status(500).json({ message: clientErrorMsg });
+        return res.status(500).json({ message: clientErrorMsg });
     }
 };
 

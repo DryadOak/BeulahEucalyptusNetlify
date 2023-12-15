@@ -33,7 +33,9 @@ const contactFormValidationRules = [
 const validationMiddleware = (req, res, next) => {
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
-         res.set('Location', '/contact'); 
+        // const redirectPath = req.originalUrl.replace(/^\/app/, '');
+        // res.set('Location', redirectPath);
+
         const errorMessages = errors.array().map((error) => error.msg);
         return res.status(200).json({ errors: errorMessages });
     }

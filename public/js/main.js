@@ -28,12 +28,14 @@ document.addEventListener("DOMContentLoaded", () => {
     currentYearElement.innerHTML += currentYear;
 
     // Review toggle
-    const reviewBtn = document.querySelector("#review-button");
-    const collapsibleForm = document.querySelector(".collapsible-form")
-     reviewBtn.addEventListener("click", () => {
-        collapsibleForm.toggleAttribute("data-visible");
-    });
-
+    const reviewBtn = document.getElementById("review-button");
+        if(reviewBtn){
+            const collapsibleForm = document.querySelector(".collapsible-form")
+            reviewBtn.addEventListener("click", () => {
+            collapsibleForm.toggleAttribute("data-visible");
+            });
+        }
+    
     // Navigation
     const mobileNavToggle = document.querySelector(".mobile-nav-menu-btn");
     const primaryNavigation = document.querySelector(".primary-navigation");
@@ -130,7 +132,7 @@ document.addEventListener("DOMContentLoaded", () => {
             });
 
             const data = await response.json();
-
+            console.log(data)
             if (data.errors) {
                 submitButton.classList.add("finished");
 				        setTimeout(() => {

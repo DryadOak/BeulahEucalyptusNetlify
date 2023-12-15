@@ -80,9 +80,9 @@ app.use((err, req, res, next) => {
 app.use("/app/", router);
 
 // remove for production!!!
-const PORT = process.env.PORT || 3000 
-app.listen(PORT, () => {
-    console.log(`server running on port ${PORT}`);
-});
+// const PORT = process.env.PORT || 3000 
+// app.listen(PORT, () => {
+//     console.log(`server running on port ${PORT}`);
+// });
 
 module.exports.handler = serverless(app)
