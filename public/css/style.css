@@ -172,8 +172,8 @@
 }
 .blur-load > img {
     opacity: 0;
-    transition: opacity 200ms ease-in-out;
-    width: auto;
+    transition: opacity 400ms ease-in-out;
+    width: 100%;
     object-position: center;
     object-fit: contain;
 }

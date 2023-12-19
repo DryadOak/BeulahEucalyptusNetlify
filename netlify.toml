@@ -5,14 +5,10 @@
   publish = "public"
 [dev]
   functions = "functions"
-  
   publish = "public"
- 
 [functions]
   external_node_modules = ["express"]
   node_bundler = "esbuild"
-
-
 [[redirects]]
   force = true
   from = "/app/*"

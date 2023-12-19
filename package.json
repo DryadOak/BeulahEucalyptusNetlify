@@ -8,7 +8,7 @@
         "start": "node functions/app.js",
         "build": "node build.js",
         "netlify-dev": "netlify dev -live",
-        "dev": "nodemon functions/app.js",
+        "dev": "nodemon functions/app.js --watch public/*.html",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "D Oak",

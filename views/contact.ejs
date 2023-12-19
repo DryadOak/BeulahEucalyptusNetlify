@@ -1,91 +1,91 @@
-<section class="section-contact padding-block-700">
-    <div class="container">
-        <h1 class="fs-primary-heading">Contact Us</h1>
-        <p class="padding-block-300">
-            To place an order or for general inquiries feel free to call on
-            <span class="link telContainer"></span>, email us
-            at
-            <span class="emailContainer link"></span>
-            or fill out the form below:
-        </p>
-        <div class="form-container">
-            <form
-                id="contact-form"
-                method="post"
-                action="/contact"
-                enctype="application/x-www-form-urlencoded"
-            >
-                <div class="div-form-group">
-                    <label for="name">Name*</label>
-                    <input
-                        type="text"
-                        name="name"
-                        id="name"
-                        required
-                        class="form-element"
-                        placeholder="John Smith"
-                    />
+        <section class="section-contact padding-block-700">
+            <div class="container">
+                <h1 class="fs-primary-heading">Contact Us</h1>
+                <p class="padding-block-300">
+                    To place an order or for general inquiries feel free to message on
+                    <span class="link telContainer"></span>, email us
+                    at
+                    <span class="emailContainer link"></span>
+                    or fill out the form below:
+                </p>
+                <div class="form-container">
+                    <form
+                        id="contact-form"
+                        method="post"
+                        action="/contact"
+                        enctype="application/x-www-form-urlencoded"
+                    >
+                        <div class="div-form-group">
+                            <label for="name">Name*</label>
+                            <input
+                                type="text"
+                                name="name"
+                                id="name"
+                                required
+                                class="form-element"
+                                placeholder="John Smith"
+                            />
+                        </div>
+                        <div class="div-form-group">
+                            <label for="email">Email*</label>
+                            <input
+                                type="email"
+                                name="email"
+                                id="email"
+                                required
+                                class="form-element"
+                                placeholder="name@gmail.com"
+                            />
+                        </div>
+                        <div class="div-form-group">
+                            <label for="tel">Tel</label>
+                            <input
+                                type="tel"
+                                name="tel"
+                                id="tel"
+                                class="form-element"
+                                placeholder="phone number"
+                            />
+                        </div>
+                        <div class="div-form-group">
+                            <label for="company">Company/Organisation</label>
+                            <input
+                                type="text"
+                                name="company"
+                                id="company"
+                                class="form-element"
+                                placeholder="florists are us"
+                            />
+                        </div>
+                        <div class="div-form-group message-full-width">
+                            <label for="message">Your message*</label>
+                            <textarea
+                                name="message"
+                                id="message"
+                                class="form-element"
+                                placeholder="Hi, I would like to place an order for..."
+                                required
+                            ></textarea>
+                        </div>
+                        <div class="submit-group">
+                            <button class="expand" id="submitButton">
+                                        Send Message
+                                    <span class="expand-icon expand-hover">
+                                    <svg class="first" xmlns="http://www.w3.org/2000/svg" fill="#000" viewBox="0 0 32 32" version="1.1">
+                                    <path d="M8.489 31.975c-0.271 0-0.549-0.107-0.757-0.316-0.417-0.417-0.417-1.098 0-1.515l14.258-14.264-14.050-14.050c-0.417-0.417-0.417-1.098 0-1.515s1.098-0.417 1.515 0l14.807 14.807c0.417 0.417 0.417 1.098 0 1.515l-15.015 15.022c-0.208 0.208-0.486 0.316-0.757 0.316z" />
+                                    </svg>
+                                    <span class="loader"></span>
+                                    <svg class="second" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="none">
+                                    <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 5L8 15l-5-4" />
+                                    </svg>
+                                    </span>
+                                    </button>
+                        </div>
+                        <div
+                            id="contact-message-container"
+                            class="hidden message-full-width"
+                        ></div>
+                    </form>
                 </div>
-                <div class="div-form-group">
-                    <label for="email">Email*</label>
-                    <input
-                        type="email"
-                        name="email"
-                        id="email"
-                        required
-                        class="form-element"
-                        placeholder="name@gmail.com"
-                    />
-                </div>
-                <div class="div-form-group">
-                    <label for="tel">Tel</label>
-                    <input
-                        type="tel"
-                        name="tel"
-                        id="tel"
-                        class="form-element"
-                        placeholder="phone number"
-                    />
-                </div>
-                <div class="div-form-group">
-                    <label for="company">Company/Organisation</label>
-                    <input
-                        type="text"
-                        name="company"
-                        id="company"
-                        class="form-element"
-                        placeholder="florists are us"
-                    />
-                </div>
-                <div class="div-form-group message-full-width">
-                    <label for="message">Your message*</label>
-                    <textarea
-                        name="message"
-                        id="message"
-                        class="form-element"
-                        placeholder="Hi, I would like to places an order for..."
-                        required
-                    ></textarea>
-                </div>
-                <div class="submit-group">
-                    <button class="expand" id="submitButton">
-		                        Send Message
-		                    <span class="expand-icon expand-hover">
-			                <svg class="first" xmlns="http://www.w3.org/2000/svg" fill="#000" viewBox="0 0 32 32" version="1.1">
-				            <path d="M8.489 31.975c-0.271 0-0.549-0.107-0.757-0.316-0.417-0.417-0.417-1.098 0-1.515l14.258-14.264-14.050-14.050c-0.417-0.417-0.417-1.098 0-1.515s1.098-0.417 1.515 0l14.807 14.807c0.417 0.417 0.417 1.098 0 1.515l-15.015 15.022c-0.208 0.208-0.486 0.316-0.757 0.316z" />
-			                </svg>
-			                <span class="loader"></span>
-			                <svg class="second" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="none">
-				            <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 5L8 15l-5-4" />
-			                </svg>
-		                    </span>
-	                        </button>
-                </div>
-                <div
-                    id="contact-message-container"
-                    class="hidden message-full-width"
-                ></div>
-            </form>
-        </div>
-    </div>
-</section>
+            </div>
+        </section>

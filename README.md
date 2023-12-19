@@ -7,6 +7,7 @@ This guide will walk you through the process of adding and generating responsive
 ## Prerequisites
 
 -   Node.js installed on your machine.
+-   ImageMagick installed on your system. You can download it from the official website: https://imagemagick.org/script/download.php. Ensure you give read and write permission for input and output dirs.
 
 ## Steps
 
