@@ -455,7 +455,7 @@
     "breakPoint": "(min-width: 999px) min(calc((100vw - 6.4rem) / 3), calc((111rem - 6.4) / 3)), (min-width: 847px) calc(50vw -4rem), calc(100vw -4rem)"
   },
   {
-    "id": "cinerea",
+    "id": "cordata",
     "imagePath": "/images/three-column",
     "widths": [
       256,
@@ -472,28 +472,7 @@
       "webp"
     ],
     "aspectRatio": "0.67",
-    "alt": "cinerea",
-    "breakPoint": "(min-width: 999px) min(calc((100vw - 6.4rem) / 3), calc((111rem - 6.4) / 3)), (min-width: 847px) calc(50vw -4rem), calc(100vw -4rem)"
-  },
-  {
-    "id": "coccifera",
-    "imagePath": "/images/three-column",
-    "widths": [
-      256,
-      455,
-      640,
-      768,
-      960,
-      1024,
-      1366,
-      1920
-    ],
-    "format": [
-      "jpg",
-      "webp"
-    ],
-    "aspectRatio": "0.67",
-    "alt": "coccifera",
+    "alt": "cordata",
     "breakPoint": "(min-width: 999px) min(calc((100vw - 6.4rem) / 3), calc((111rem - 6.4) / 3)), (min-width: 847px) calc(50vw -4rem), calc(100vw -4rem)"
   },
   {
@@ -828,7 +807,7 @@
       "jpg",
       "webp"
     ],
-    "aspectRatio": "1.44",
+    "aspectRatio": "1.72",
     "alt": "wreaths",
     "breakPoint": "(min-width: 999px) min(calc((100vw - 6.4rem) / 3), calc((111rem - 6.4) / 3)), (min-width: 847px) calc(50vw -4rem), calc(100vw -4rem)"
   },
