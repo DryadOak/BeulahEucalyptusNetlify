@@ -1,28 +1,28 @@
-<section>
-	<div class="container even-columns gallery padding-block-900">
-		<%
-		const galleryImages = [
-			{ image: images.find(image => image.id === 'DSC_0003'), containerClass: 'span-two-columns img-container' },
-			{ image: images.find(image => image.id === 'DSC_9281') },
-			{ image: images.find(image => image.id === 'DSC_9312') },
-			{ image: images.find(image => image.id === 'DSC_9961') },
-			{ image: images.find(image => image.id === 'DSC_9340') },
-			{ image: images.find(image => image.id === 'DSC_9333') },
-			{ image: images.find(image => image.id === 'DSC_9975'), containerClass: 'span-two-columns span-two-rows' },
-			{ image: images.find(image => image.id === 'DSC_9450') },
-			{ image: images.find(image => image.id === 'DSC_9256') },
-			{ image: images.find(image => image.id === 'DSC_9318') },
-			{ image: images.find(image => image.id === 'DSC_9275') },
-			{ image: images.find(image => image.id === 'DSC_0179'), containerClass: 'span-two-columns img-container' },
-			{ image: images.find(image => image.id === 'DSC_0196') },
-			{ image: images.find(image => image.id === 'DSC_9297') },
-			{ image: images.find(image => image.id === 'DSC_9346') },
-			{ image: images.find(image => image.id === 'DSC_9456') },
-			// Add more image objects as needed
-		];
-		%>
-		<% galleryImages.forEach(function(imageObj) { %>
-			<%- include('partials/imageSrcset', { image: imageObj.image, containerClass: imageObj.containerClass || '' }) %>
-		  <% }); %>		  
-	</div>
-</section>
+			<section>
+				<div class="container even-columns gallery padding-block-900">
+					<%
+					const galleryImages = [
+						{ image: images.find(image => image.id === 'DSC_0003'), containerClass: 'span-two-columns img-container' },
+						{ image: images.find(image => image.id === 'DSC_9281') },
+						{ image: images.find(image => image.id === 'DSC_9312') },
+						{ image: images.find(image => image.id === 'DSC_9961') },
+						{ image: images.find(image => image.id === 'DSC_9340') },
+						{ image: images.find(image => image.id === 'DSC_9333') },
+						{ image: images.find(image => image.id === 'DSC_9975'), containerClass: 'span-two-columns span-two-rows' },
+						{ image: images.find(image => image.id === 'DSC_9450') },
+						{ image: images.find(image => image.id === 'DSC_9256') },
+						{ image: images.find(image => image.id === 'DSC_9318') },
+						{ image: images.find(image => image.id === 'DSC_9275') },
+						{ image: images.find(image => image.id === 'DSC_0179'), containerClass: 'span-two-columns img-container' },
+						{ image: images.find(image => image.id === 'DSC_0196') },
+						{ image: images.find(image => image.id === 'DSC_9297') },
+						{ image: images.find(image => image.id === 'DSC_9346') },
+						{ image: images.find(image => image.id === 'DSC_9456') },
+						// Add more image objects as needed
+					];
+					%>
+					<% galleryImages.forEach(function(imageObj) { %>
+						<%- include('partials/imageSrcset', { image: imageObj.image, containerClass: imageObj.containerClass || '' }) %>
+					<% }); %>		  
+				</div>
+			</section>

@@ -1,12 +1,13 @@
 // this file contains objects for page specific meta tags and scripts
 const headPageData = {
     index: {
-        title: "Beulah Eucalyptus Plantation",
+        title: "Beulah Eucalyptus",
         description:
             "Discover our high-quality eucalyptus foliage, infused oil, and seasonal offerings.",
         keywords:
             "eucalyptus foliage, eucalyptus oil, wreaths, seasonal products, local supplier",
         hasSlider: true,
+        hasForm: true,
     },
     foliage: {
         title: "Eucalyptus Foliage",
@@ -55,6 +56,7 @@ const headPageData = {
             "Contact us for more information on our eucalyptus products, wholesale orders, or to request a custom quote. We're here to help!",
         keywords:
             "eucalyptus plantation, contact us, wholesale orders, custom quote",
+        hasForm: true,    
     },
     "terms-of-service": {
         title: "Beulah Eucalyptus Terms of Service",

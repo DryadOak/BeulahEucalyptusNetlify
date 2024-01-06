@@ -22,11 +22,16 @@
         <% headPageData.hasSlider = typeof headPageData.hasSlider !== 'undefined' ? headPageData.hasSlider : false %>
         <% if (headPageData.hasSlider) { %><link rel="stylesheet" href="//unpkg.com/a11y-slider@latest/dist/a11y-slider.css"/>
         <script src="//unpkg.com/a11y-slider@latest/dist/a11y-slider.js"></script><% } %>
+        <!-- Include reCAPTCHA script if the the page has a form -->
+        <% headPageData.hasForm = typeof headPageData.hasForm !== 'undefined' ? headPageData.hasForm : false %>
+        <% if (headPageData.hasForm) { %> <script src="https://www.google.com/recaptcha/api.js" async defer> </script><% } %>
         <script src="js/main.js"></script>
     </head>
     <body>
-        <%- include('../partials/header') %>
-            <main><%- body %></main>
-        <%- include('../partials/footer') %>
+<%- include('../partials/header') %>
+        <main>
+<%- body %>
+        </main>
+<%- include('../partials/footer') %>
     </body>
 </html>

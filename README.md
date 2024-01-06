@@ -77,7 +77,8 @@ This project includes a build script that pre-renders EJS files in the views dir
 **Important:**
 
 Make final changes to the EJS files in the views directory, not the HTML files in the public directory. The HTML files in the public directory will be overwritten when the build script is executed.
-To add or make changes to image files, please follow the Responsive Image Generation Guide below.
+To add or make changes to image files,Please follow the [Responsive Image Generation Guide](#responsive-image-generation-guide) below.
+
 
 ## Folder Structure
 The project is organised into the following main directories and files:
@@ -102,7 +103,7 @@ This guide will walk you through the process of adding and generating responsive
 
 -   Node.js installed on your machine.
 -   ImageMagick installed on your system. You can download it from the official website: https://imagemagick.org/script/download.php. Ensure you give read and write permission for input and output dirs.
--   Install cwebp
+-   Install cwebp https://developers.google.com/speed/webp/download
 
 ## Steps
 
@@ -136,7 +137,7 @@ If the new images don't fit an existing directory, create a new one. Clearly out
 
 ### 5. Update Image Metadata
 
-Run the following command to update the objects in images.json, which is used by the server:
+When the new image files are moved to the directory, run the following command to update the objects in images.json. The images.json is used by the build script and passed into the imagesSrcset EJS partial to pre-render the html:
 
 ```bash
 node generate-image-metadata.js

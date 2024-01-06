@@ -16,7 +16,7 @@ class PageBuilder {
             const files = await fs.readdir(this.baseDir);
             const ejsFiles = files.filter(
                 (file) => path.extname(file) === ".ejs",
-            );
+            ); 
             this.imagesSrcsetData = JSON.parse(
                 await fs.readFile(this.imagesSrcsetDataPath, "utf8"),
             );
