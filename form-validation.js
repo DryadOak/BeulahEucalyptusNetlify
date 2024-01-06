@@ -11,7 +11,7 @@ const reCaptchaValidation = (req, res, next) => {
               method: "POST",
               body: params,
         })
-        .then(res => res.json())
+        .then(response => response.json())
         .then(data => {
             if(data.success){
                 next();
