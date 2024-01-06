@@ -22,12 +22,12 @@ app.use(express.urlencoded({ extended: true }));
 
 
 
-router.post("/contact", contactFormValidationRules, validationMiddleware, reCaptchaValidation, (req, res) => {
+router.post("/contact", reCaptchaValidation, contactFormValidationRules, validationMiddleware, (req, res) => {
     sanitizeFormData(req);
     sendFormToEmail(req, res, "contact");
 });
 
-router.post("/", reviewFormValidationRules, validationMiddleware, reCaptchaValidation, (req, res) => {
+router.post("/", reCaptchaValidation, reviewFormValidationRules, validationMiddleware, (req, res) => {
     sanitizeFormData(req);
     sendFormToEmail(req, res, "review");
 });
