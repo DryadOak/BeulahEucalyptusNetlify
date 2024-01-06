@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const submitButton = document.querySelector("button.expand")
 
         if (form) {
-            submitButton.addEventListener("click", async function (e) {
+            form.addEventListener("submit", async function (e) {
                 e.preventDefault();
                 submitButton.classList.add("loading");
                 await handleFormSubmit(form, messageContainer, route);
