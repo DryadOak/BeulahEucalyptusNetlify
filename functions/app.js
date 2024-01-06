@@ -71,7 +71,7 @@ createRoutes(routesToCreate);
 // Error handling middleware
 app.use((err, req, res, next) => {
     console.error(err);
-    res.status(500).send("Internal Server Error");
+    res.status(500).send(`Internal Server Error: ${err}`);
 });
 
 
