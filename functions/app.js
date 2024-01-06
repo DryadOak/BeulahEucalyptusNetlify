@@ -6,6 +6,7 @@ const serverless = require("serverless-http")
 const {
     reviewFormValidationRules,
     contactFormValidationRules,
+    reCaptchaValidation,
     validationMiddleware,
     sanitizeFormData,
 } = require("../form-validation.js");
@@ -21,13 +22,12 @@ app.use(express.urlencoded({ extended: true }));
 
 
 
-router.post("/contact", contactFormValidationRules, validationMiddleware, (req, res) => {
-        sanitizeFormData(req);
-        sendFormToEmail(req, res, "contact");
-    },
-);
+router.post("/contact", contactFormValidationRules, validationMiddleware, reCaptchaValidation, (req, res) => {
+    sanitizeFormData(req);
+    sendFormToEmail(req, res, "contact");
+});
 
-router.post("/", reviewFormValidationRules, validationMiddleware, (req, res) => {
+router.post("/", reviewFormValidationRules, validationMiddleware, reCaptchaValidation, (req, res) => {
     sanitizeFormData(req);
     sendFormToEmail(req, res, "review");
 });
