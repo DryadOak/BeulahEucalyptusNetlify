@@ -134,6 +134,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const data = await response.json();
             console.log(data)
             if (data.errors) {
+                grecaptcha.reset()
                 submitButton.classList.add("finished");
 				        setTimeout(() => {
                             submitButton.classList.remove("loading");
