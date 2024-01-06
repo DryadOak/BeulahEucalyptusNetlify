@@ -1,26 +1,5 @@
 const { body, validationResult } = require("express-validator");
 const sanitizeHtml = require("sanitize-html");
-const fetch = require('node-fetch');
-
-const reCaptchaValidation = (req, res, next) => {
-    const params = new URLSearchParams({
-            secret: RECAPTCHA_SECRET_KEY,
-            response: req.body['g-recaptcha-response'],
-            remoteip: req.ip,
-        })
-        fetch("https://www.google.com/recaptcha/api/siteverify", {
-              method: "POST",
-              body: params,
-        })
-        .then(response => response.json())
-        .then(data => {
-            if(data.success){
-                next();
-            } else{
-                return res.status(200).json({ errors: "reCaptcha failed"})
-            }
-        })
-}
 
 // Function to validate UK phone numbers
 const validateUkPhoneNumber = (value) => {
@@ -71,7 +50,6 @@ const sanitizeFormData = (req) => {
 };
 
 module.exports = {
-    reCaptchaValidation,
     reviewFormValidationRules,
     contactFormValidationRules,
     validationMiddleware,
