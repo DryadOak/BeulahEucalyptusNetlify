@@ -108,6 +108,10 @@ document.addEventListener("DOMContentLoaded", () => {
         if (form) {
             submitButton.addEventListener("click", async function (e) {
                 e.preventDefault();
+                const captchaRes = grecaptcha.getResponse();
+                if(!captchaRes.length > 0){
+                    throw new Error("Captcha not complete")
+                }
                 submitButton.classList.add("loading");
                 await handleFormSubmit(form, messageContainer, route);
             });

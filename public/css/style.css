@@ -857,6 +857,11 @@ input[type="submit"]:focus-visible {
         object-fit: cover;
     }
 }
+
+/* reCaptcha*/
+.g-recaptcha > div {
+    float: right !important;
+}
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/

@@ -24,7 +24,7 @@
         <script src="//unpkg.com/a11y-slider@latest/dist/a11y-slider.js"></script><% } %>
         <!-- Include reCAPTCHA script if the the page has a form -->
         <% headPageData.hasForm = typeof headPageData.hasForm !== 'undefined' ? headPageData.hasForm : false %>
-        <% if (headPageData.hasForm) { %> <script src="https://www.google.com/recaptcha/api.js" async defer> </script><% } %>
+        <% if (headPageData.hasForm) { %><script src="https://www.google.com/recaptcha/api.js" async defer> </script><% } %>
         <script src="js/main.js"></script>
     </head>
     <body>
