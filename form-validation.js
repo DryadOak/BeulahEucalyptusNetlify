@@ -1,5 +1,6 @@
 const { body, validationResult } = require("express-validator");
 const sanitizeHtml = require("sanitize-html");
+const fetch = require('node-fetch');
 
 const reCaptchaValidation = (req, res, next) => {
     const params = new URLSearchParams({
