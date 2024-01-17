@@ -39,7 +39,7 @@ Looking forward, while the responsive image generator served its purpose for the
 ## Lessons Learned:
 This project has been a fantastic learning experience introducing me to new features and middleware. Providing countless moments of 'whoa this is awesome' as well as 'why are none of my images rendering' (turns out Prettier introduces line breaks that can break EJS). While the learning opportunities have been plentiful, here are some of my key takeaways:
 - Don't push new features to production late on a Friday if you want to have a peaceful weekend.
-- Always make sure your linter supports the languages your using
+- Always make sure your linter supports the languages you're using.
 - Debugging can be like detective work, it's much more enjoyable with fresh coffee and daylight.
 - Discovering good documentation is like finding a well-drawn map, it's a joy. So try and be a cartographer of your codebase.
 - I find it very hard to switch off, remember to take a break.
